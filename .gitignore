@@ -29,3 +29,8 @@ hs_err_pid*
 #ignore bin,gradle
 bin
 gradle
+
+.bsp/
+.idea/
+project/target/*
+target/*

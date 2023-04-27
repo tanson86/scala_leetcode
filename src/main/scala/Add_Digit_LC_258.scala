@@ -16,7 +16,6 @@ object Add_Digit_LC_258 extends App {
 
   @scala.annotation.tailrec
   def addDigits3(num: Int): Int = {
-    println("called")
     val s = num.toString
     val sums = (str: String) => str.foldLeft(0)(_ + _.toString.toInt)
 
