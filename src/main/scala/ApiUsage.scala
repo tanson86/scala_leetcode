@@ -19,4 +19,16 @@ object ApiUsage extends App{
     case c @ ('(' | ')') => println("contains")
     case c => println("not contains")
   })
+
+  val arr = Array(1,2,3,4)
+  println(arr.drop(1).map(_=>arr(0)*2).mkString)
+  println(arr.indices.mkString)
+  println("abc".appended('d'))
+
+  println("abcdefg".sliding(3,1).zipWithIndex.mkString)
+  println("abcdefg".sliding(3,1).zipWithIndex.collectFirst{ case (s,i) if(s=="cde") => {
+    i
+  }}.getOrElse(-1))
+
+  println(Array(1,2,3,3).diff(Array(1,1,2,2)).mkString(","))
 }
